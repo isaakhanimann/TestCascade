@@ -34,6 +34,15 @@ struct ContentView: View {
                         }
                     }
                 }
+                Section(header: Text("Oldest file children")) {
+                    ForEach(files.first?.children?.allObjects as? [Child] ?? []) { child in
+                        if child.parent == nil {
+                            Text("\(child.name ?? "Unknown") has no parent")
+                        } else {
+                            Text("\(child.name ?? "Unknown") has parent")
+                        }
+                    }
+                }
             }
         }
     }
