@@ -11,8 +11,13 @@
 		EA2F7C42276C89CE002FCC83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F7C41276C89CE002FCC83 /* ContentView.swift */; };
 		EA2F7C44276C89CF002FCC83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA2F7C43276C89CF002FCC83 /* Assets.xcassets */; };
 		EA2F7C47276C89CF002FCC83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA2F7C46276C89CF002FCC83 /* Preview Assets.xcassets */; };
-		EA2F7C49276C89CF002FCC83 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F7C48276C89CF002FCC83 /* Persistence.swift */; };
 		EA2F7C4C276C89CF002FCC83 /* TestCascade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA2F7C4A276C89CF002FCC83 /* TestCascade.xcdatamodeld */; };
+		EA2F7C57276CB713002FCC83 /* SerializedEntities.json in Resources */ = {isa = PBXBuildFile; fileRef = EA2F7C56276CB713002FCC83 /* SerializedEntities.json */; };
+		EA6CB77B276D0F560015B2AC /* CodingUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6CB775276D0F560015B2AC /* CodingUserInfoKey.swift */; };
+		EA6CB77C276D0F560015B2AC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6CB776276D0F560015B2AC /* Persistence.swift */; };
+		EA6CB77D276D0F560015B2AC /* Throwable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6CB777276D0F560015B2AC /* Throwable.swift */; };
+		EA6CB77E276D0F560015B2AC /* Child+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6CB778276D0F560015B2AC /* Child+CoreDataClass.swift */; };
+		EA6CB780276D0F560015B2AC /* File+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6CB77A276D0F560015B2AC /* File+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +26,13 @@
 		EA2F7C41276C89CE002FCC83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA2F7C43276C89CF002FCC83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA2F7C46276C89CF002FCC83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EA2F7C48276C89CF002FCC83 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		EA2F7C4B276C89CF002FCC83 /* TestCascade.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestCascade.xcdatamodel; sourceTree = "<group>"; };
+		EA2F7C56276CB713002FCC83 /* SerializedEntities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SerializedEntities.json; sourceTree = "<group>"; };
+		EA6CB775276D0F560015B2AC /* CodingUserInfoKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodingUserInfoKey.swift; sourceTree = "<group>"; };
+		EA6CB776276D0F560015B2AC /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Persistence.swift; path = "../../PsychonautWiki Journal/PsychonautWiki Journal/Persistence.swift"; sourceTree = "<group>"; };
+		EA6CB777276D0F560015B2AC /* Throwable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Throwable.swift; sourceTree = "<group>"; };
+		EA6CB778276D0F560015B2AC /* Child+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Child+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EA6CB77A276D0F560015B2AC /* File+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "File+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,13 @@
 				EA2F7C3F276C89CE002FCC83 /* TestCascadeApp.swift */,
 				EA2F7C41276C89CE002FCC83 /* ContentView.swift */,
 				EA2F7C43276C89CF002FCC83 /* Assets.xcassets */,
-				EA2F7C48276C89CF002FCC83 /* Persistence.swift */,
+				EA6CB77A276D0F560015B2AC /* File+CoreDataClass.swift */,
+				EA6CB778276D0F560015B2AC /* Child+CoreDataClass.swift */,
+				EA6CB775276D0F560015B2AC /* CodingUserInfoKey.swift */,
+				EA6CB776276D0F560015B2AC /* Persistence.swift */,
+				EA6CB777276D0F560015B2AC /* Throwable.swift */,
 				EA2F7C4A276C89CF002FCC83 /* TestCascade.xcdatamodeld */,
+				EA2F7C56276CB713002FCC83 /* SerializedEntities.json */,
 				EA2F7C45276C89CF002FCC83 /* Preview Content */,
 			);
 			path = TestCascade;
@@ -132,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA2F7C47276C89CF002FCC83 /* Preview Assets.xcassets in Resources */,
+				EA2F7C57276CB713002FCC83 /* SerializedEntities.json in Resources */,
 				EA2F7C44276C89CF002FCC83 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,9 +160,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA2F7C4C276C89CF002FCC83 /* TestCascade.xcdatamodeld in Sources */,
-				EA2F7C49276C89CF002FCC83 /* Persistence.swift in Sources */,
+				EA6CB77D276D0F560015B2AC /* Throwable.swift in Sources */,
 				EA2F7C42276C89CE002FCC83 /* ContentView.swift in Sources */,
+				EA6CB77E276D0F560015B2AC /* Child+CoreDataClass.swift in Sources */,
+				EA6CB77C276D0F560015B2AC /* Persistence.swift in Sources */,
+				EA6CB77B276D0F560015B2AC /* CodingUserInfoKey.swift in Sources */,
 				EA2F7C40276C89CE002FCC83 /* TestCascadeApp.swift in Sources */,
+				EA6CB780276D0F560015B2AC /* File+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

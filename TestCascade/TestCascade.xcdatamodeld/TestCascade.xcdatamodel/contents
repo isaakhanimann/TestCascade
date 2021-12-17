@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Child" representedClassName="Child" syncable="YES" codeGenerationType="category">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="File" inverseName="children" inverseEntity="File"/>
+    </entity>
+    <entity name="File" representedClassName="File" syncable="YES" codeGenerationType="category">
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Child" inverseName="parent" inverseEntity="Child"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
+        <element name="Child" positionX="-63" positionY="-9" width="128" height="59"/>
+        <element name="File" positionX="-63" positionY="-18" width="128" height="59"/>
     </elements>
 </model>
